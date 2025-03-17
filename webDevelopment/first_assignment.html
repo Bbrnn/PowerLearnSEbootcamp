@@ -1,0 +1,86 @@
+<!-- Introduction to HTML5
+Objectives
+Understand the structure of an HTML5 document. Use essential HTML5 elements to create a simple webpage. Implement semantic HTML for better accessibility and SEO.
+
+Instructions
+Create an index.html file.
+Structure the document using DOCTYPE, html, head, and body.
+Note
+
+Include at least:
+A header with a title.
+A nav with links.
+A main section with some text content.
+A footer with contact information. Ensure proper indentation and commenting.
+Tasks
+Create a well-structured HTML5 document.
+Use at least 5 different HTML elements.
+Ensure semantic correctness.
+Happy Coding! 💻✨-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My portfolio</title>
+  <style>
+    .container {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 10px;
+}
+  </style>
+  
+</style>
+</head>
+
+<body>
+  <header>
+    <h1>This is my portfolio</h1>
+    <nav>
+      <a href="index">Home</a>
+      <a href="about">About</a>
+      <a href="contact">Contact</a>
+      <a href="projects">Projects</a> 
+    </nav>
+  </header>
+
+  <section id="#index">
+    <h2>Welcome to my portfolio</h2>
+    <p>My name is bridget ngugi</p>
+  </section>
+  <section id="#about">
+    <h2>About me</h2>
+    <p>I am a computer science grdauate with experience in data analysis,web development and cybersecurity</p>
+  </section>
+  <section id="#contact">
+    <h2>Contact me</h2>
+    <p>Phone number: 0123456</p>
+    <p>Email address: bridget@gmail.com</p>
+    <div class="#container">
+      <form action="">
+        <label for="name">Name</label>
+        <input type="text" id="name"><br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email"><br><br>
+        <textarea name="message" id="message" rows="5" cols="20">Message</textarea>
+        <button type="submit" aria-label="submit form">Submit</button>
+     
+      </form>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My projects</h2>
+    <img src="project1.jpg" alt="Project1">
+    <img src="project2.jpg" alt="Project2">
+    </section>
+
+    <footer>
+      <p>© 2025.Contact me @ bridget@gmail.com 🧙‍♂️</p>
+      </footer>
+</body>
+</html>
