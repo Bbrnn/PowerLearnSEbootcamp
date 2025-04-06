@@ -1,0 +1,6 @@
+This is a sample text file.
+It contains multiple lines.
+Python is a powerful language.
+Counting words and converting to uppercase.
+This is the last line.
+Extra words for counting.
