@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Website</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Interactive Website!</h1>
+  </header>
+  
+  <main>
+    <section id="interactive-elements">
+      <button id="changeTextButton">Click Me!</button>
+      <div id="textDisplay">This text will change.</div>
+
+      <h3>Gallery</h3>      
+      <div class="image-gallery">
+        <img src="assets/images/image1.jpg" alt="Image 1">
+        <img src="assets/images/image2.jpg" alt="Image 2">
+        <img src="assets/images/image3.jpg" alt="Image 3">
+      </div>
+      
+      <form id="userForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" required minlength="8>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    
+    <section id="tabs">
+      <div class="tab" data-tab="1">Tab 1</div>
+      <div class="tab" data-tab="2">Tab 2</div>
+      <div class="tab-content" id="tab1">Content for Tab 1</div>
+      <div class="tab-content" id="tab2">Content for Tab 2</div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Interactive Website. All rights reserved.</p>
+  </footer>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
