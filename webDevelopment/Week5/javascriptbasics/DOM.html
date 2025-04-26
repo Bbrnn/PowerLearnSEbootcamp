@@ -1,0 +1,44 @@
+<!--The DOM is an interface that represents an HTML or XML document as a tree structure, where each node is an object.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+  <h1 id=""title>Hello, DOM</h1>
+  <p class="intro">Welcome!</p>
+  <p class="intro">Let's learn DOM</p>
+  <p class="highlight">One</p>
+<p class="highlight">Two</p>
+<p id="message">Click the button to change me!</p>
+<button id="btn">Click Me</button>
+<button id="alert">Show Alert</button>
+
+
+
+  <script>
+    const title = document.getElementById("title");
+    console.log(title.textContent);
+
+    const intros = document.getElementsByClassName("intro");
+    console.log(intros[0].textContent);
+    const paragraphs = document.getElementsByTagName("p");
+    console.log(paragraphs.length);
+    const highlights = document.querySelectorAll(".highlight");
+    highlights.forEach(el => console.log(el.textContent)); 
+    const button = document.getElementById("btn");
+  const message = document.getElementById("message");
+
+  button.addEventListener("click", () => {
+    message.textContent = "You clicked the button!";
+  });
+  const alertButton = document.getElementById("alert");
+  alertButton.addEventListener("click", () => {
+    alert("Button clicked!");
+  }); 
+  </script>
+  
+</body>
+</html>
